@@ -11,10 +11,26 @@ class Solution {
             a = Math.max(a , nums[i]);
             b = Math.max( nums[i] ,sum - a-c );
         }*/
-        Arrays.sort(nums);
+        /*Arrays.sort(nums);
         int a = nums[n-1];
         int b = nums[n-2];
         int c = nums[0];
+        return a + b - c;*/
+        int a = Integer.MIN_VALUE;
+        int b = Integer.MIN_VALUE;
+        int c = Integer.MAX_VALUE;
+
+        for(int num : nums){
+            if(num >  a ){
+                b = a;
+                a = num;
+            }else if(num > b){
+                b = num;
+            }
+            if(num < c){
+                c = num;
+            }
+        }
         return a + b - c;
     }
 }
