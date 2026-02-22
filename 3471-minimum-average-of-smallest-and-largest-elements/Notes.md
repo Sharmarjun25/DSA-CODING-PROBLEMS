@@ -1,0 +1,1 @@
+<h2>minimum-average-of-smallest-and-largest-elements Notes</h2><hr>[ Time taken: 5 hrs 0 m 18 s ]
