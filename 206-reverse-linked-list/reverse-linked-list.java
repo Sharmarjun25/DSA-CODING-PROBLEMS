@@ -10,7 +10,7 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
-        Stack<Integer> st = new Stack<>();
+       /* Stack<Integer> st = new Stack<>();
         ListNode temp = head;
         while(temp != null){
             st.push(temp.val);
@@ -22,7 +22,19 @@ class Solution {
             //st.pop();
             temp = temp.next;
         }
-        return head;
+        return head;*/ // brute force method
+
+        ListNode temp = head;
+        ListNode prev = null;
+        while(temp != null){
+            ListNode front = temp.next;
+            temp.next = prev;
+            prev = temp;
+            temp = front;
+        }
+        return prev;
+
+
 
 
 
