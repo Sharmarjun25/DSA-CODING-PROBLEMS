@@ -1,1 +1,1 @@
-<h2>mean-of-array-after-removing-some-elements Notes</h2><hr>[ Time taken: 7hrs 39m 57s ]
+<h2>mean-of-array-after-removing-some-elements Notes</h2><hr>[ Time taken: 1d 8hrs 2m 39s ]
