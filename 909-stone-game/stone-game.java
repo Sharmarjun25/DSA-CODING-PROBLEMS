@@ -1,6 +1,6 @@
 class Solution {
     public boolean stoneGame(int[] piles) {
-        Arrays.sort(piles);
+        /*Arrays.sort(piles);
         int n = piles.length;
         int alice = 0;
         int bob = 0;
@@ -15,6 +15,7 @@ class Solution {
             return true;
         }else{
             return false;
-        }
+        }*/
+        return true;
     }
 }
