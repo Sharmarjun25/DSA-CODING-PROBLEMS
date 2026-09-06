@@ -7,7 +7,7 @@ class Solution {
                 list.add()
             }
         }*/
-        int dup = 0;
+        /*int dup = 0;
         int miss = 0;
 
         int[] freq = new int[n];
@@ -22,6 +22,23 @@ class Solution {
                 miss = i+1;
             }
         }
+        return new int[]{dup , miss};*/
+        int dup = 0, miss = 0;
+        Arrays.sort(nums);
+        for(int i = 0 ; i <= n ; i++){
+            int count = 0;
+            for(int j = 0 ; j < n ; j++){
+                if(nums[j] == i){
+                    count++;
+                }
+            }
+            if(count == 2){
+                dup = i;
+            }else if(count == 0){
+                miss = i;
+            }
+        }
+ 
         return new int[]{dup , miss};
     }
 }
